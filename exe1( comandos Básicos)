@@ -19,3 +19,31 @@ create table `pessoas`(
 `nacionalidade` varchar (20) default 'Brasileiro'  ,
 primary key (id)
 )default charset = utf8;
+
+// inserindo dados 
+insert into teste value 
+('a','b','c'),
+('a','b','c'),
+('a','b','c');
+
+
+// comando para adicionar colunas/campos
+alter table nomedatabela
+add colum profissão varchar(10);
+
+// para excluir coluna 
+alter table nomedatabela 
+drop column nomedacoluna;
+
+// Modificar tipos e constrains
+alter table nomedatabela
+modify column nomedacoluna varchar(10);
+
+//Renomeando tabelas
+alter table pessoas 
+rename to gafanhoto
+
+//apagando tabelas
+drop table nomedatabela
+
+
