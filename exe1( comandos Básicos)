@@ -46,4 +46,10 @@ rename to gafanhoto
 //apagando tabelas
 drop table nomedatabela
 
+// alterando linhas
+update nomedatabela
+set nome ='java', ano = '2016'
+where codigo = 5
+limit 1;
+
 
